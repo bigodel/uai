@@ -1,6 +1,7 @@
 ### Project-specific ###
 /.cache/
 uai
+/.qtc_clangd/
 
 ### C++ ###
 # Prerequisites
