@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label_trem1">
+   <widget class="QLabel" name="label_train1">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -30,7 +30,7 @@
      <string>T1</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trem2">
+   <widget class="QLabel" name="label_train2">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -46,7 +46,7 @@
      <string>T2</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trem3">
+   <widget class="QLabel" name="label_train3">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -62,7 +62,7 @@
      <string>T3</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trem4">
+   <widget class="QLabel" name="label_train4">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -78,7 +78,7 @@
      <string>T4</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trem5">
+   <widget class="QLabel" name="label_train5">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -94,7 +94,7 @@
      <string>T5</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho01">
+   <widget class="QLabel" name="label_trail01">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -110,7 +110,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho02">
+   <widget class="QLabel" name="label_trail02">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -126,7 +126,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho03">
+   <widget class="QLabel" name="label_trail03">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -142,7 +142,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho04">
+   <widget class="QLabel" name="label_trail04">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -158,7 +158,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho05">
+   <widget class="QLabel" name="label_trail05">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -174,7 +174,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho06">
+   <widget class="QLabel" name="label_trail06">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -190,7 +190,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho07">
+   <widget class="QLabel" name="label_trail07">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -206,7 +206,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho08">
+   <widget class="QLabel" name="label_trail08">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -222,7 +222,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho09">
+   <widget class="QLabel" name="label_trail09">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -238,7 +238,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho10">
+   <widget class="QLabel" name="label_trail10">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -254,7 +254,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho11">
+   <widget class="QLabel" name="label_trail11">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -270,7 +270,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho12">
+   <widget class="QLabel" name="label_trail12">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -286,7 +286,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho13">
+   <widget class="QLabel" name="label_trail13">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -302,7 +302,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho15">
+   <widget class="QLabel" name="label_trail15">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -318,7 +318,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trilho14">
+   <widget class="QLabel" name="label_trail14">
     <property name="geometry">
      <rect>
       <x>320</x>
@@ -334,7 +334,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="button_ligar">
+   <widget class="QPushButton" name="button_start">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -344,10 +344,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>Ligar</string>
+     <string>Start</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="button_parar">
+   <widget class="QPushButton" name="button_stop">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -357,31 +357,31 @@
      </rect>
     </property>
     <property name="text">
-     <string>Parar</string>
+     <string>Stop</string>
     </property>
    </widget>
-   <zorder>label_trilho01</zorder>
-   <zorder>label_trilho02</zorder>
-   <zorder>label_trilho03</zorder>
-   <zorder>label_trilho04</zorder>
-   <zorder>label_trilho05</zorder>
-   <zorder>label_trilho06</zorder>
-   <zorder>label_trilho07</zorder>
-   <zorder>label_trilho08</zorder>
-   <zorder>label_trilho09</zorder>
-   <zorder>label_trilho10</zorder>
-   <zorder>label_trilho11</zorder>
-   <zorder>label_trilho12</zorder>
-   <zorder>label_trilho13</zorder>
-   <zorder>label_trilho15</zorder>
-   <zorder>label_trilho14</zorder>
-   <zorder>button_ligar</zorder>
-   <zorder>button_parar</zorder>
-   <zorder>label_trem1</zorder>
-   <zorder>label_trem2</zorder>
-   <zorder>label_trem3</zorder>
-   <zorder>label_trem4</zorder>
-   <zorder>label_trem5</zorder>
+   <zorder>label_trail01</zorder>
+   <zorder>label_trail02</zorder>
+   <zorder>label_trail03</zorder>
+   <zorder>label_trail04</zorder>
+   <zorder>label_trail05</zorder>
+   <zorder>label_trail06</zorder>
+   <zorder>label_trail07</zorder>
+   <zorder>label_trail08</zorder>
+   <zorder>label_trail09</zorder>
+   <zorder>label_trail10</zorder>
+   <zorder>label_trail11</zorder>
+   <zorder>label_trail12</zorder>
+   <zorder>label_trail13</zorder>
+   <zorder>label_trail15</zorder>
+   <zorder>label_trail14</zorder>
+   <zorder>button_start</zorder>
+   <zorder>button_stop</zorder>
+   <zorder>label_train1</zorder>
+   <zorder>label_train2</zorder>
+   <zorder>label_train3</zorder>
+   <zorder>label_train4</zorder>
+   <zorder>label_train5</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

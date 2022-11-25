@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include "trem.h"
+#include "train.h"
 #include <QMainWindow>
 
 namespace Ui {
@@ -16,22 +16,22 @@ public:
   ~MainWindow();
 
 public slots:
-  void updateInterface(int, int, int);
+  void update_interface(int, int, int);
 
 private slots:
-  void on_button_ligar_clicked();
+  void on_button_start_clicked();
 
-  void on_button_parar_clicked();
+  void on_button_stop_clicked();
 
 private:
   Ui::MainWindow *ui;
 
   // Cria os objetos TREM's
-  Trem *trem1;
-  Trem *trem2;
-  Trem *trem3;
-  Trem *trem4;
-  Trem *trem5;
+  Train *train1;
+  Train *train2;
+  Train *train3;
+  Train *train4;
+  Train *train5;
 };
 
 #endif // MAINWINDOW_H

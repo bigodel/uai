@@ -1,16 +1,18 @@
-#include "trem.h"
+#include "train.h"
 #include <QtCore>
 
-// Construtor
-Trem::Trem(int id, int x, int y) {
+Train::Train(int id, int x, int y) {
   this->id = id;
   this->x = x;
   this->y = y;
-  velocidade = 100;
+  speed = 100;
 }
 
-// Função a ser executada após executar trem->START
-void Trem::run() {
+void move_train(int id, int x_offset, int y_offset) {
+
+}
+
+void Train::run() {
   while (true) {
     switch (id) {
     case 1: // Trem 1
@@ -22,7 +24,7 @@ void Trem::run() {
         x -= 10;
       else                      // up
         y -= 10;
-      emit updateGUI(id, x, y); // Emite um sinal
+      emit update_GUI(id, x, y); // Emite um sinal
       break;
     case 2: // Trem 2
       if (y == 20 && x < 260)   // right
@@ -33,7 +35,7 @@ void Trem::run() {
         x -= 10;
       else                      // up
         y -= 10;
-      emit updateGUI(id, x, y); // Emite um sinal
+      emit update_GUI(id, x, y); // Emite um sinal
       break;
     case 3: // Trem 3
       if (y == 20 && x < 380)   // right
@@ -44,7 +46,7 @@ void Trem::run() {
         x -= 10;
       else                      // up
         y -= 10;
-      emit updateGUI(id, x, y); // Emite um sinal
+      emit update_GUI(id, x, y); // Emite um sinal
       break;
     case 4: // Trem 4
       if (y == 120 && x < 200)   // right
@@ -55,7 +57,7 @@ void Trem::run() {
         x -= 10;
       else                      // up
         y -= 10;
-      emit updateGUI(id, x, y); // Emite um sinal
+      emit update_GUI(id, x, y); // Emite um sinal
       break;
     case 5: // Trem 5
       if (y == 120 && x < 320)   // right
@@ -66,11 +68,11 @@ void Trem::run() {
         x -= 10;
       else                      // up
         y -= 10;
-      emit updateGUI(id, x, y); // Emite um sinal
+      emit update_GUI(id, x, y); // Emite um sinal
       break;
     default:
       break;
     }
-    msleep(velocidade);
+    msleep(speed);
   }
 }
