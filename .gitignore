@@ -1,7 +1,6 @@
 ### Project-specific ###
-/.cache/
 uai
-/.qtc_clangd/
+/build/
 
 ### C++ ###
 # Prerequisites

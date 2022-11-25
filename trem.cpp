@@ -2,8 +2,8 @@
 #include <QtCore>
 
 // Construtor
-Trem::Trem(int ID, int x, int y) {
-  this->ID = ID;
+Trem::Trem(int id, int x, int y) {
+  this->id = id;
   this->x = x;
   this->y = y;
   velocidade = 100;
@@ -12,28 +12,61 @@ Trem::Trem(int ID, int x, int y) {
 // Função a ser executada após executar trem->START
 void Trem::run() {
   while (true) {
-    switch (ID) {
+    switch (id) {
     case 1: // Trem 1
-      if (y == 30 && x < 330)
+      if (y == 20 && x < 140)   // right
         x += 10;
-      else if (x == 330 && y < 150)
+      else if (x == 140 && y < 120) // down
         y += 10;
-      else if (x > 60 && y == 150)
+      else if (x > 20 && y == 120) // left
         x -= 10;
-      else
+      else                      // up
         y -= 10;
-      emit updateGUI(ID, x, y); // Emite um sinal
+      emit updateGUI(id, x, y); // Emite um sinal
       break;
     case 2: // Trem 2
-      if (y == 30 && x < 600)
+      if (y == 20 && x < 260)   // right
         x += 10;
-      else if (x == 600 && y < 150)
+      else if (x == 260 && y < 120) // down
         y += 10;
-      else if (x > 330 && y == 150)
+      else if (x > 140 && y == 120) // left
         x -= 10;
-      else
+      else                      // up
         y -= 10;
-      emit updateGUI(ID, x, y); // Emite um sinal
+      emit updateGUI(id, x, y); // Emite um sinal
+      break;
+    case 3: // Trem 3
+      if (y == 20 && x < 380)   // right
+        x += 10;
+      else if (x == 380 && y < 120) // down
+        y += 10;
+      else if (x > 260 && y == 120) // left
+        x -= 10;
+      else                      // up
+        y -= 10;
+      emit updateGUI(id, x, y); // Emite um sinal
+      break;
+    case 4: // Trem 4
+      if (y == 120 && x < 200)   // right
+        x += 10;
+      else if (x == 200 && y < 220) // down
+        y += 10;
+      else if (x > 80 && y == 220) // left
+        x -= 10;
+      else                      // up
+        y -= 10;
+      emit updateGUI(id, x, y); // Emite um sinal
+      break;
+    case 5: // Trem 5
+      if (y == 120 && x < 320)   // right
+        x += 10;
+      else if (x == 320 && y < 220) // down
+        y += 10;
+      else if (x > 200 && y == 220) // left
+        x -= 10;
+      else                      // up
+        y -= 10;
+      emit updateGUI(id, x, y); // Emite um sinal
       break;
     default:
       break;

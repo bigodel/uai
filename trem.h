@@ -24,7 +24,7 @@ signals:
 private:
   int x;          // posição X do trem na tela
   int y;          // posição Y do trem na tela
-  int ID;         // ID do trem
+  int id;         // ID do trem
   int velocidade; // Velocidade. É o tempo de dormir em milisegundos entre a
                   // mudança de posição do trem
 };
