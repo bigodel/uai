@@ -16,6 +16,7 @@ class Train : public QThread {
 public:
   Train(int, int, int); // construtor
   void run();           // função a ser executada pela thread
+  void move_train(int, int, int);
 
   // Cria um sinal
 signals:

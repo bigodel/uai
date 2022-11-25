@@ -17,7 +17,7 @@
    <widget class="QLabel" name="label_train1">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>50</x>
       <y>20</y>
       <width>20</width>
       <height>20</height>
@@ -33,7 +33,7 @@
    <widget class="QLabel" name="label_train2">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>150</x>
       <y>20</y>
       <width>20</width>
       <height>20</height>
@@ -49,7 +49,7 @@
    <widget class="QLabel" name="label_train3">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>250</x>
       <y>20</y>
       <width>20</width>
       <height>20</height>
@@ -65,7 +65,7 @@
    <widget class="QLabel" name="label_train4">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>100</x>
       <y>120</y>
       <width>20</width>
       <height>20</height>
@@ -97,9 +97,9 @@
    <widget class="QLabel" name="label_trail01">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>70</x>
       <y>20</y>
-      <width>100</width>
+      <width>80</width>
       <height>20</height>
      </rect>
     </property>
@@ -113,7 +113,7 @@
    <widget class="QLabel" name="label_trail02">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>150</x>
       <y>20</y>
       <width>20</width>
       <height>120</height>
@@ -129,9 +129,9 @@
    <widget class="QLabel" name="label_trail03">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>70</x>
       <y>120</y>
-      <width>100</width>
+      <width>80</width>
       <height>20</height>
      </rect>
     </property>
@@ -145,7 +145,7 @@
    <widget class="QLabel" name="label_trail04">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>50</x>
       <y>20</y>
       <width>20</width>
       <height>120</height>
@@ -161,9 +161,9 @@
    <widget class="QLabel" name="label_trail05">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>170</x>
       <y>20</y>
-      <width>100</width>
+      <width>80</width>
       <height>20</height>
      </rect>
     </property>
@@ -177,7 +177,7 @@
    <widget class="QLabel" name="label_trail06">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>250</x>
       <y>20</y>
       <width>20</width>
       <height>120</height>
@@ -193,9 +193,9 @@
    <widget class="QLabel" name="label_trail07">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>170</x>
       <y>120</y>
-      <width>100</width>
+      <width>80</width>
       <height>20</height>
      </rect>
     </property>
@@ -209,9 +209,9 @@
    <widget class="QLabel" name="label_trail08">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>270</x>
       <y>20</y>
-      <width>100</width>
+      <width>80</width>
       <height>20</height>
      </rect>
     </property>
@@ -225,7 +225,7 @@
    <widget class="QLabel" name="label_trail09">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>350</x>
       <y>20</y>
       <width>20</width>
       <height>120</height>
@@ -241,9 +241,9 @@
    <widget class="QLabel" name="label_trail10">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>270</x>
       <y>120</y>
-      <width>100</width>
+      <width>80</width>
       <height>20</height>
      </rect>
     </property>
@@ -273,9 +273,9 @@
    <widget class="QLabel" name="label_trail12">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>120</x>
       <y>220</y>
-      <width>100</width>
+      <width>80</width>
       <height>20</height>
      </rect>
     </property>
@@ -289,7 +289,7 @@
    <widget class="QLabel" name="label_trail13">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>100</x>
       <y>140</y>
       <width>20</width>
       <height>100</height>
@@ -307,7 +307,7 @@
      <rect>
       <x>220</x>
       <y>220</y>
-      <width>100</width>
+      <width>80</width>
       <height>20</height>
      </rect>
     </property>
@@ -321,7 +321,7 @@
    <widget class="QLabel" name="label_trail14">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>300</x>
       <y>140</y>
       <width>20</width>
       <height>100</height>

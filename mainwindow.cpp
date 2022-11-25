@@ -6,10 +6,10 @@ MainWindow::MainWindow(QWidget *parent)
   ui->setupUi(this);
 
   // Cria o trem com seu (ID, posição X, posição Y)
-  train1 = new Train(1, 20, 20);
-  train2 = new Train(2, 140, 20);
-  train3 = new Train(3, 260, 20);
-  train4 = new Train(4, 80, 120);
+  train1 = new Train(1, 50, 20);
+  train2 = new Train(2, 150, 20);
+  train3 = new Train(3, 250, 20);
+  train4 = new Train(4, 100, 120);
   train5 = new Train(5, 200, 120);
 
   /*
@@ -31,7 +31,6 @@ MainWindow::MainWindow(QWidget *parent)
           SLOT(update_interface(int, int, int)));
 }
 
-// Função que será executada quando o sinal UPDATEGUI for emitido
 void MainWindow::update_interface(int id, int x, int y) {
   switch (id) {
   case 1: // Atualiza a posição do trem1
