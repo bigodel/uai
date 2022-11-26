@@ -7,94 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>421</width>
-    <height>352</height>
+    <height>535</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label_train1">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>20</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel { background: red}</string>
-    </property>
-    <property name="text">
-     <string>T1</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_train2">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>20</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel { background: red}</string>
-    </property>
-    <property name="text">
-     <string>T2</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_train3">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>20</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel { background: red}</string>
-    </property>
-    <property name="text">
-     <string>T3</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_train4">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>120</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel { background: red}</string>
-    </property>
-    <property name="text">
-     <string>T4</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_train5">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>120</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel { background: red}</string>
-    </property>
-    <property name="text">
-     <string>T5</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_trail01">
+   <widget class="QLabel" name="label_trail0">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -110,7 +30,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trail02">
+   <widget class="QLabel" name="label_trail1">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -126,7 +46,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trail03">
+   <widget class="QLabel" name="label_trail2">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -142,7 +62,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trail04">
+   <widget class="QLabel" name="label_trail3">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -158,7 +78,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trail05">
+   <widget class="QLabel" name="label_trail4">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -174,7 +94,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trail06">
+   <widget class="QLabel" name="label_trail5">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -190,7 +110,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trail07">
+   <widget class="QLabel" name="label_trail6">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -206,7 +126,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trail08">
+   <widget class="QLabel" name="label_trail7">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -222,7 +142,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trail09">
+   <widget class="QLabel" name="label_trail8">
     <property name="geometry">
      <rect>
       <x>350</x>
@@ -238,7 +158,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trail10">
+   <widget class="QLabel" name="label_trail9">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -254,7 +174,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trail11">
+   <widget class="QLabel" name="label_trail10">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -270,7 +190,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trail12">
+   <widget class="QLabel" name="label_trail11">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -286,7 +206,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trail13">
+   <widget class="QLabel" name="label_trail12">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -302,7 +222,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trail15">
+   <widget class="QLabel" name="label_trail14">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -318,7 +238,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_trail14">
+   <widget class="QLabel" name="label_trail13">
     <property name="geometry">
      <rect>
       <x>300</x>
@@ -337,10 +257,10 @@
    <widget class="QPushButton" name="button_start">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>260</y>
-      <width>99</width>
-      <height>27</height>
+      <x>40</x>
+      <y>430</y>
+      <width>100</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="text">
@@ -350,38 +270,379 @@
    <widget class="QPushButton" name="button_stop">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>260</y>
-      <width>98</width>
-      <height>27</height>
+      <x>160</x>
+      <y>430</y>
+      <width>100</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="text">
      <string>Stop</string>
     </property>
    </widget>
-   <zorder>label_trail01</zorder>
-   <zorder>label_trail02</zorder>
-   <zorder>label_trail03</zorder>
-   <zorder>label_trail04</zorder>
-   <zorder>label_trail05</zorder>
-   <zorder>label_trail06</zorder>
-   <zorder>label_trail07</zorder>
-   <zorder>label_trail08</zorder>
-   <zorder>label_trail09</zorder>
-   <zorder>label_trail10</zorder>
-   <zorder>label_trail11</zorder>
-   <zorder>label_trail12</zorder>
-   <zorder>label_trail13</zorder>
-   <zorder>label_trail15</zorder>
-   <zorder>label_trail14</zorder>
-   <zorder>button_start</zorder>
-   <zorder>button_stop</zorder>
-   <zorder>label_train1</zorder>
-   <zorder>label_train2</zorder>
-   <zorder>label_train3</zorder>
-   <zorder>label_train4</zorder>
-   <zorder>label_train5</zorder>
+   <widget class="QLabel" name="label_train0">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>20</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel { background: red}</string>
+    </property>
+    <property name="text">
+     <string>T0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_train1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel { background: red}</string>
+    </property>
+    <property name="text">
+     <string>T1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_train2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>20</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel { background: red}</string>
+    </property>
+    <property name="text">
+     <string>T2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_train3">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>120</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel { background: red}</string>
+    </property>
+    <property name="text">
+     <string>T3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_train4">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>120</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel { background: red}</string>
+    </property>
+    <property name="text">
+     <string>T4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_reset">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>430</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_train0">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>260</y>
+      <width>320</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="sliderPosition">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_train1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>290</y>
+      <width>320</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="sliderPosition">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_train2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>320</y>
+      <width>320</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_train3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>350</y>
+      <width>320</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_train4">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>380</y>
+      <width>320</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_slider0">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>20</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_slider1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>290</y>
+      <width>20</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_slider3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>20</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_slider4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>380</y>
+      <width>20</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_slider2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>20</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_speed1">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>290</y>
+      <width>25</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_speed2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>320</y>
+      <width>25</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_speed4">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>380</y>
+      <width>25</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_speed0">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>260</y>
+      <width>25</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_speed3">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>350</y>
+      <width>25</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

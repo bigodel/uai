@@ -1,11 +1,18 @@
 #ifndef TRAIN_H
 #define TRAIN_H
 
+#define TRAIL_SIZE 100
+
 #include <QThread>
 
+typedef struct position_s {
+  int x;
+  int y;
+} position;
+
 /*
- * Classe Trem herda QThread
- * Classe Trem passa a ser uma thread.
+ * Classe Train herda QThread
+ * Classe Train passa a ser uma thread.
  * A função START inicializa a thread. Após inicializada, a thread irá executar
  * a função RUN. Para parar a execução da função RUN da thread, basta executar a
  * função TERMINATE.
@@ -14,20 +21,22 @@
 class Train : public QThread {
   Q_OBJECT
 public:
-  Train(int, int, int); // construtor
-  void run();           // função a ser executada pela thread
-  void move_train(int, int, int);
+  Train(int, position);
+  Train(int, position, int);
+  void run();
+  void reset();
+  // void move_train(int, int);
+  void set_speed(int);
 
-  // Cria um sinal
 signals:
-  void update_GUI(int, int, int);
+  void update_position(int, int, int);
 
 private:
-  int x;     // posição X do trem na tela
-  int y;     // posição Y do trem na tela
-  int id;    // ID do trem
-  int speed; // Velocidade. É o tempo de dormir em milisegundos entre a mudança
-             // de posição do trem
+  int id;
+  int x;
+  int y;
+  position start_pos;
+  int speed;
 };
 
 #endif // TRAIN_H
