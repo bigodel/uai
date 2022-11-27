@@ -6,7 +6,7 @@
 #include <QMainWindow>
 #include <QSlider>
 
-#define N_TRAINS 3
+#define N_TRAINS 5
 
 namespace Ui {
 class MainWindow;
@@ -19,9 +19,6 @@ public:
   explicit MainWindow(QWidget *parent = 0);
   ~MainWindow();
 
-signals:
-  void update_speed(int, int);
-
 public slots:
   void update_interface(int, int, int);
   void update_speed_train0(int);
@@ -33,13 +30,12 @@ public slots:
 private slots:
   void on_button_start_clicked();
   void on_button_stop_clicked();
-  void on_button_reset_clicked();
 
 private:
   Ui::MainWindow *ui;
 
-  QLabel *labels[5];
-  QSlider *sliders[5];
+  QLabel *labels[N_TRAINS];
+  QSlider *sliders[N_TRAINS];
   Train *trains[N_TRAINS];
 
   Train *train0;

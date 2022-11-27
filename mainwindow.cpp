@@ -6,21 +6,41 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
   ui->setupUi(this);
 
+  // store label objects in array
   labels[0] = ui->label_train0;
   labels[1] = ui->label_train1;
   labels[2] = ui->label_train2;
   labels[3] = ui->label_train3;
   labels[4] = ui->label_train4;
 
+  // same for sliders
   sliders[0] = ui->slider_train0;
   sliders[1] = ui->slider_train1;
   sliders[2] = ui->slider_train2;
   sliders[3] = ui->slider_train3;
   sliders[4] = ui->slider_train4;
 
+  // initialize each train, setting
   for (int i = 0; i < N_TRAINS; i++) {
-    position pos = {labels[i]->geometry().x(), labels[i]->geometry().y()};
-    trains[i] = new Train(i, pos);
+    int x = labels[i]->geometry().x();
+    int y = labels[i]->geometry().y();
+    switch(i) {
+    case 0:
+      trains[i] = new Train(i, {x, y}, {20, 20});
+      break;
+    case 1:
+      trains[i] = new Train(i, {x, y}, {200, 20});
+      break;
+    case 2:
+      trains[i] = new Train(i, {x, y}, {380, 20});
+      break;
+    case 3:
+      trains[i] = new Train(i, {x, y}, {110, 200});
+      break;
+    case 4:
+      trains[i] = new Train(i, {x, y}, {290, 200});
+      break;
+    }
     connect(trains[i], SIGNAL(update_position(int, int, int)),
             SLOT(update_interface(int, int, int)));
   }
@@ -76,12 +96,4 @@ void MainWindow::on_button_start_clicked() {
 void MainWindow::on_button_stop_clicked() {
   for (int i = 0; i < N_TRAINS; i++)
     trains[i]->terminate();
-}
-
-void MainWindow::on_button_reset_clicked() {
-  for (int i = 0; i < N_TRAINS; i++) {
-    trains[i]->reset();
-    trains[i]->terminate();
-    // sliders[i]->setValue(sliders[i]->minimum());
-  }
 }
