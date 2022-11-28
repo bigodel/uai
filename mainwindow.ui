@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>600</width>
-    <height>700</height>
+    <height>624</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -306,32 +306,6 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="button_start">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>590</y>
-      <width>100</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Start</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="button_stop">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>590</y>
-      <width>100</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Stop</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_train0">
     <property name="geometry">
      <rect>
@@ -428,19 +402,6 @@
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="button_reset">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>590</y>
-      <width>100</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Reset</string>
     </property>
    </widget>
    <widget class="QSlider" name="slider_train0">
@@ -728,12 +689,9 @@
    <zorder>label_trail12</zorder>
    <zorder>label_trail14</zorder>
    <zorder>label_trail13</zorder>
-   <zorder>button_start</zorder>
-   <zorder>button_stop</zorder>
    <zorder>label_train0</zorder>
    <zorder>label_train1</zorder>
    <zorder>label_train3</zorder>
-   <zorder>button_reset</zorder>
    <zorder>slider_train0</zorder>
    <zorder>slider_train1</zorder>
    <zorder>slider_train2</zorder>

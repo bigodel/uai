@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "train.h"
 #include "ui_mainwindow.h"
+#include <map>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
@@ -20,30 +21,12 @@ MainWindow::MainWindow(QWidget *parent)
   sliders[3] = ui->slider_train3;
   sliders[4] = ui->slider_train4;
 
-  // initialize each train, setting
-  for (int i = 0; i < N_TRAINS; i++) {
-    int x = labels[i]->geometry().x();
-    int y = labels[i]->geometry().y();
-    switch(i) {
-    case 0:
-      trains[i] = new Train(i, {x, y}, {20, 20});
-      break;
-    case 1:
-      trains[i] = new Train(i, {x, y}, {200, 20});
-      break;
-    case 2:
-      trains[i] = new Train(i, {x, y}, {380, 20});
-      break;
-    case 3:
-      trains[i] = new Train(i, {x, y}, {110, 200});
-      break;
-    case 4:
-      trains[i] = new Train(i, {x, y}, {290, 200});
-      break;
-    }
-    connect(trains[i], SIGNAL(update_position(int, int, int)),
-            SLOT(update_interface(int, int, int)));
-  }
+  std::map<int, position> initial_positions = {};
+  initial_positions[0] = {20, 20};
+  initial_positions[1] = {200, 20};
+  initial_positions[2] = {380, 20};
+  initial_positions[3] = {110, 200};
+  initial_positions[4] = {290, 200};
 
   connect(sliders[0], SIGNAL(valueChanged(int)),
           SLOT(update_speed_train0(int)));
@@ -55,6 +38,16 @@ MainWindow::MainWindow(QWidget *parent)
           SLOT(update_speed_train3(int)));
   connect(sliders[4], SIGNAL(valueChanged(int)),
           SLOT(update_speed_train4(int)));
+
+  // initialize each train, setting
+  for (int i = 0; i < N_TRAINS; i++) {
+    int x = labels[i]->geometry().x();
+    int y = labels[i]->geometry().y();
+    trains[i] = new Train(i, {x, y}, initial_positions[i]);
+    connect(trains[i], SIGNAL(update_position(int, int, int)),
+            SLOT(update_interface(int, int, int)));
+    trains[i]->start();
+  }
 }
 
 MainWindow::~MainWindow() { delete ui; }
@@ -86,14 +79,4 @@ void MainWindow::update_speed_train3(int speed) {
 void MainWindow::update_speed_train4(int speed) {
   trains[4]->set_speed(speed);
   ui->label_speed4->setText(QString::number(speed));
-}
-
-void MainWindow::on_button_start_clicked() {
-  for (int i = 0; i < N_TRAINS; i++)
-    trains[i]->start();
-}
-
-void MainWindow::on_button_stop_clicked() {
-  for (int i = 0; i < N_TRAINS; i++)
-    trains[i]->terminate();
 }

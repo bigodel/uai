@@ -27,10 +27,6 @@ public slots:
   void update_speed_train3(int);
   void update_speed_train4(int);
 
-private slots:
-  void on_button_start_clicked();
-  void on_button_stop_clicked();
-
 private:
   Ui::MainWindow *ui;
 

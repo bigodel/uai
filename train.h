@@ -28,7 +28,6 @@ class Train : public QThread {
 public:
   Train(int, position, position);
   Train(int, position, position, int);
-  bool check();
   void move_train();
   void run();
   void set_speed(int);
@@ -43,8 +42,6 @@ private:
   position top_left;
   position bottom_right;
   int speed;
-
-  int in_critical_region();
 };
 
 #endif // TRAIN_H
